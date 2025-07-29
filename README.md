@@ -8,26 +8,14 @@ This project implements a **multithreaded process manager** capable of managing 
 - **`include/`**: Contains header files with shared declarations used across different parts of the project.
 - **`build/`**: The directory where the compiled output files will be stored.
 
-### How to Build the Project
+### Build Instructions
+To build the project using g++:
 
-To compile the project using `g++`, run the following command:
-
-```bash
-g++ -std=c++20 -I./include -pthread src/process.cpp src/scheduler.cpp src/dashboard.cpp src/main.cpp -o build/MultithreadedProcessManager
+- g++ -std=c++20 -I./include -pthread src/process.cpp src/scheduler.cpp src/dashboard.cpp src/main.cpp -o build/MultithreadedProcessManager
 
 
-### Running the Project
+### Run Instructions
+To run the project using terminal in linux/mac:
 
-To run the project on a Linux/macOS terminal:
-
-1. Navigate to the build directory:
-
-    ```bash
-    cd build/
-    ```
-
-2. Execute the program:
-
-    ```bash
-    ./MultithreadedProcessManager
-    ```
+- cd build/
+- ./MultithreadedProcessManager
